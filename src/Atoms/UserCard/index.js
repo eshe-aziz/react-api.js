@@ -1,5 +1,3 @@
-import './index.css'
-
 const UserCard = ({image, fullName}) => {
  
 
@@ -16,7 +14,7 @@ const UserCard = ({image, fullName}) => {
     }
 
     return(
-        <div className="users"  >
+        <div >
             <figure>
             <img src= { image } alt={`${fullName} profile`}  style={imageStyle}/>
              

@@ -1,5 +1,6 @@
 import { useGetUsers } from "./hooks/useGetUsers";
 import UserCard from "../Atoms/UserCard";
+import './index.css'
 
 
 const Users = () => {
@@ -9,7 +10,7 @@ const Users = () => {
 
     
     return(
-        <div>
+        <div className="users_names">
             {loading && <h2>Loading users...</h2>}
             {users.length > 0 && !loading
             ? users.map(user => (
